@@ -1,0 +1,1013 @@
+.header {
+  background-color: #FAFAFA;
+  color: #333;
+  transition: top 0.3s ease, padding 0.3s ease;
+  box-shadow: 2px, 2px, 2px, 0.5;
+}
+
+@media screen and (min-width: 992px) {
+  .header.fixed {
+    position: fixed;
+    top: -2.5rem;
+    width: 100%;
+    height: 95px;
+    z-index: 1;
+  }
+  .header.fixed li a {
+    font-size: 1.8rem !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .toggler__icon {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .sub__nav__dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #393939;
+    height: 1100px;
+    width: 360px !important;
+    font-size: 0.9rem !important;
+    border-radius: 3px;
+    padding: 2rem auto;
+    overflow: hidden;
+  }
+  .sub__nav__dropdown .bg__signup {
+    padding-bottom: 1rem !important;
+  }
+  .show_drop {
+    position: relative;
+    top: -85px;
+    animation: ToLeftSidebarAnimation 0.5s;
+  }
+  .close {
+    position: relative;
+    top: -85px;
+    animation: ToRightSidebarAnimation 0.3s;
+  }
+  ul li {
+    color: rgba(255, 255, 255, 0.5019607843);
+  }
+  ul li a:hover:before {
+    content: "";
+    background-color: #ffffff !important;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .container__width {
+    position: sticky;
+    height: 75px;
+    top: 0;
+    z-index: 1;
+  }
+  .container__width .search {
+    position: absolute;
+    left: 195px !important;
+  }
+  .container__width .search .form-control {
+    width: 225px !important;
+    background: none !important;
+    border: 1px solid rgba(51, 51, 51, 0.2) !important;
+    border-radius: 5px !important;
+  }
+  .container__width .search .form-control:focus {
+    font-size: 15px;
+  }
+  .container__width .search ::-moz-placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5019607843);
+  }
+  .container__width .search ::placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5019607843);
+  }
+  .container__width .search button {
+    padding: 1rem 2rem;
+  }
+  .navbar-collapse.show_drop {
+    display: block;
+    z-index: 1;
+  }
+  .font__icon__bar {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+  }
+  .sub__nav__dropdown {
+    top: 75px;
+    position: absolute;
+    right: -15% !important;
+  }
+  .sub__nav__dropdown .bg__signup {
+    padding-bottom: 1rem !important;
+  }
+  .section__appetizer .ph_text {
+    font-size: 2.5rem !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hover__text {
+    display: none !important;
+  }
+  .search__mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header.fixed {
+    position: fixed;
+    top: 0 !important;
+    z-index: 1;
+  }
+  .h_ph {
+    background-color: #071120;
+    color: rgba(255, 255, 255, 0.5019607843);
+    transition: top 0.3s ease, padding 0.3s ease;
+    box-shadow: 2px, 2px, 2px, 0.5;
+  }
+  .container__width {
+    overflow: hidden;
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__width .logo {
+    max-width: 147px;
+    max-height: 67px;
+  }
+  .container__width .logo img {
+    width: 100%;
+    height: 55px !important;
+  }
+  .container__width .navbar {
+    padding: 0;
+  }
+  .container__width .search {
+    display: none;
+  }
+  .container__width .search__mobile {
+    margin: auto 0;
+  }
+  .container__width .search__mobile .search-box {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .container__width .search__mobile .input-search {
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    padding: 4px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+    background-color: #11ff11;
+    color: rgba(255, 255, 255, 0.5019607843);
+  }
+  .container__width .search__mobile .input-search::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5019607843);
+    font-size: 18px;
+    font-weight: 100;
+  }
+  .container__width .search__mobile .input-search::placeholder {
+    color: rgba(255, 255, 255, 0.5019607843);
+    font-size: 18px;
+    font-weight: 100;
+  }
+  .container__width .search__mobile .input-search:focus {
+    width: 255px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  }
+  .container__width .search__mobile .btn-search {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+  }
+  .container__width .search__mobile .btn-search:focus ~ .input-search {
+    width: 255px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  }
+  .navbar-collapse.show_drop {
+    display: block;
+    z-index: 20 !important;
+  }
+  .sub__nav__dropdown {
+    position: relative;
+    top: 80px !important;
+    right: -30%;
+    height: 850px !important;
+    z-index: 20 !important;
+  }
+  .font__icon__bar {
+    color: #fff;
+    font-size: 20px;
+  }
+  .image__group {
+    position: relative;
+  }
+  .image__group .type__image {
+    position: relative;
+  }
+  .image__group .type__image img {
+    width: 135px !important;
+    height: 135px !important;
+    margin-bottom: 1.5rem !important;
+    transition: transform 0.3s ease-in-out;
+  }
+  .image__group .type__image .hover__text {
+    display: none;
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    color: #333 !important;
+  }
+  .image__group .type__image:hover img {
+    transform: scale(1.1) translateX(80%);
+  }
+  .image__group .type__image:hover .hover__text {
+    position: absolute;
+    display: block;
+    left: 25%;
+    transform: scale(1.1) translateX(-80%);
+    color: #fff;
+  }
+  .about__food .hover__img {
+    max-width: 100% !important;
+  }
+  .about__food .hover__img img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .section__card {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .section__card h1 {
+    padding-top: 5rem;
+  }
+  .section__card .card {
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .section__card .card img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+  .section__card .card .card-text {
+    font-size: 1.8rem;
+  }
+  .language__section {
+    text-align: center !important;
+  }
+  .language__section .language__block {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  .blog__image {
+    margin-bottom: 5rem;
+  }
+  .section__form .mb-3 {
+    margin-top: 2rem;
+  }
+  .section__form .mb-3 label {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .section__form .mb-3 textarea {
+    font-size: 16px;
+  }
+  .section__form .mb-3 :focus {
+    font-size: 17px !important;
+    color: #000;
+  }
+  .section__form .mb-3 input {
+    padding: 1.5rem !important;
+    font-size: 16px;
+  }
+  .section__appetizer {
+    padding: 0 20px;
+  }
+  .section__appetizer .hover__img {
+    margin-bottom: 1rem !important;
+    max-width: 500px !important;
+  }
+  .section__appetizer .hover__img img {
+    width: 100%;
+  }
+  .section__appetizer .back__home {
+    padding: 0.7rem 1.5rem !important;
+    font-size: 1.5rem !important;
+  }
+  .popup__detail {
+    position: absolute !important;
+    z-index: 100 !important;
+  }
+}
+.bg__color {
+  background-color: #1a2531;
+}
+
+.navbar {
+  padding: 1.5rem 0 0 1.5rem;
+  position: relative;
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .navbar {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .logo img {
+    width: 115px;
+    height: 85px !important;
+  }
+}
+.navbar .logo {
+  left: 0;
+  margin: 0;
+  max-width: 235px;
+}
+.navbar .logo img {
+  width: 100%;
+  height: 100px;
+}
+.navbar .search {
+  margin-left: 65px;
+}
+.navbar .search .form-control {
+  width: 225px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  border-bottom: 3px solid #333;
+  color: #333;
+  font-size: 18px;
+}
+.navbar .search .form-control:focus {
+  color: #333;
+  font-size: 18px;
+  box-shadow: none;
+}
+.navbar .search ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+.navbar .search ::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+.navbar .search button {
+  padding: 1rem 2.5rem;
+}
+.navbar .search button .search__icon {
+  color: #333;
+  font-size: 20px !important;
+}
+.navbar .search button:hover {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.navbar .search button:hover .search__icon {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.navbar .navlist {
+  position: absolute;
+  right: 0;
+  color: inherit !important;
+  display: flex;
+  gap: 3.5rem;
+}
+.navbar .navlist li {
+  display: inline;
+  list-style-type: none;
+}
+.navbar .navlist li a {
+  list-style-type: none;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.navbar .navlist li a:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  background-color: #333;
+  animation: underlineAnimation 0.3s ease-in-out;
+}
+.navbar .navlist li .bg__signin {
+  background-color: #333;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+.navbar .navlist li .bg__signup {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  outline: none;
+}
+.navbar .navlist li .bg__signin,
+.navbar .navlist li .bg__signup:hover {
+  color: white;
+}
+.navbar .navlist li .bg__signin:before,
+.navbar .navlist li .bg__signup:hover:before {
+  display: none;
+}
+.navbar .navlist li .signup_hover {
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.navbar .navlist li .signin_hover {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.banner {
+  height: 550px;
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+  .banner img {
+    width: 100%;
+    height: 400px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: 300px;
+  }
+  .banner img {
+    width: 100%;
+    height: 300px !important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .banner {
+    height: 200px;
+  }
+  .banner img {
+    height: 200px !important;
+  }
+}
+.banner .carousel-item {
+  max-width: 1400px;
+}
+.banner img {
+  width: 100%;
+  height: 550px;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .type__food .image__group img {
+    margin-bottom: 1.5rem;
+  }
+}
+.type__food .image__group img {
+  width: 200px;
+  height: 200px;
+}
+
+.about__food {
+  padding: 5rem 0;
+  max-height: 800px;
+}
+.about__food .image img {
+  width: 100%;
+  height: 600px;
+}
+.about__food .image2 img {
+  width: 100%;
+  height: 300px;
+  padding: 8px 0;
+}
+
+.hover__img {
+  position: relative;
+  overflow: hidden;
+}
+.hover__img img {
+  transition: transform 0.5s ease;
+}
+.hover__img:hover img {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .banner__section .section__img {
+    max-width: 535px;
+  }
+  .banner__section .section__img img {
+    width: 100%;
+  }
+  .banner__section .tablet__respon {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.banner__section .section__img {
+  max-width: 635px;
+}
+.banner__section .section__img img {
+  width: 100%;
+}
+
+.section__card {
+  padding: 12rem;
+  background-color: #000;
+}
+.section__card .card {
+  height: 500px;
+  background-color: #353535;
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  color: gold !important;
+}
+.section__card .card img {
+  width: 150px;
+  height: 150px;
+  margin: 1rem 1.5rem;
+}
+.section__card .card .card-text {
+  font-size: 2.5rem;
+  color: #fff;
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .section__card .card {
+    height: 400px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .section__card .card .card-text {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .section__card .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.language__section .language__wrap {
+  border: 1px solid #757575;
+  max-width: 100%;
+  outline: unset;
+  padding: 1rem 3rem;
+}
+.language__section .language__wrap:hover {
+  border: none;
+  box-shadow: 10px 10px 10px rgba(1, 255, 255, 0.5);
+}
+.language__section .language__wrap span {
+  display: block;
+  font-size: 2.5rem;
+}
+.language__section .language__wrap span:hover {
+  text-decoration: underline;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes ToLeftSidebarAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes ToRightSidebarAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.section__appetizer .text__center__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 10px;
+}
+.section__appetizer .contron__back {
+  position: relative;
+}
+.section__appetizer .contron__back .back__home {
+  position: absolute;
+  background-color: #4f764f;
+  padding: 1rem 3.5rem;
+  border-radius: 7px;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+.section__appetizer .contron__back .back__home:hover {
+  background-color: darkgreen;
+}
+.section__appetizer .hover__img {
+  position: relative;
+  overflow: hidden;
+}
+.section__appetizer .hover__img img {
+  transition: transform 0.5s ease;
+}
+.section__appetizer .hover__img:hover img {
+  transform: scale(1.1);
+}
+
+.section__blog .blog__image img {
+  width: 100%;
+  height: 535px;
+}
+.section__blog .blog__form input {
+  background: none;
+  outline: unset;
+  width: 100%;
+  color: white;
+  padding: 1.5rem;
+  color: #d7d7d7;
+  font-size: 20px;
+}
+.section__blog .blog__form input::-moz-placeholder, .section__blog .blog__form select::-moz-placeholder, .section__blog .blog__form textarea::-moz-placeholder {
+  color: #d7d7d7;
+  font-size: 20px;
+}
+.section__blog .blog__form input::placeholder, .section__blog .blog__form select::placeholder, .section__blog .blog__form textarea::placeholder {
+  color: #d7d7d7;
+  font-size: 20px;
+}
+.section__blog .blog__form input:focus, .section__blog .blog__form select:focus, .section__blog .blog__form textarea:focus {
+  background: none;
+  outline: unset !important;
+  border: 1px solid #fff;
+  font-size: 20px;
+  color: #333;
+}
+.section__blog .blog__form textarea {
+  width: 100%;
+  background: none;
+  font-size: 20px;
+  color: #d7d7d7;
+  border-radius: 7px;
+  resize: none;
+  height: 150px;
+}
+.section__blog .blog__form select {
+  width: 100%;
+  padding: 15px;
+  outline: unset;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 20px;
+}
+.section__blog .blog__form select option {
+  background: #000000;
+  color: white;
+}
+.section__blog button {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #52F375;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section__form {
+  padding: 5rem 0;
+}
+.section__form label {
+  font-size: 1.5rem;
+}
+.section__form img {
+  height: 425px;
+}
+.section__form input.form-control,
+.section__form textarea.form-control {
+  background: none;
+  color: white;
+  padding: 2rem;
+}
+.section__form input.form-control:focus,
+.section__form textarea.form-control:focus {
+  font-size: 1.5rem;
+}
+.section__form textarea {
+  resize: none;
+  height: 150px;
+}
+.section__form button {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #52F375;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer__section {
+  padding: 2rem 0;
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .footer__section {
+    padding: 2rem;
+  }
+  .footer__section .navlist {
+    flex-direction: column !important;
+  }
+  .footer__section .group__icon {
+    flex-direction: row !important;
+    gap: 4.5rem;
+  }
+  .footer__section .group__icon .icon {
+    margin: 0 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__section .group__icon__mobile {
+    display: none;
+  }
+  .footer__section .phone__res {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__section .group__icon {
+    display: none !important;
+  }
+  .footer__section .group__icon__mobile .sub__wrap {
+    padding: 0 2rem;
+  }
+  .footer__section .group__icon__mobile .sub__wrap .icon {
+    margin-right: 2rem;
+    color: #fff;
+    font-size: 35px;
+  }
+  .footer__section h2 {
+    margin: 0 1rem !important;
+  }
+  .footer__section .navlist, .footer__section .nav__search {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__section .nav__search {
+    padding: 1rem 2rem;
+  }
+  .footer__section .nav__search input {
+    padding: 1rem !important;
+    width: 372px !important;
+    font-size: 14px;
+  }
+  .footer__section .nav__search input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  .footer__section .nav__search input:focus, .footer__section .nav__search input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+.footer__section h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.footer__section .group__icon {
+  display: flex;
+}
+.footer__section .group__icon .sub__wrap {
+  margin-right: 8rem;
+}
+.footer__section .group__icon .sub__wrap .icon {
+  color: #fff;
+  font-size: 35px;
+}
+.footer__section .group__icon .sub__wrap .icon_mid {
+  margin-left: 3rem;
+}
+.footer__section .navlist {
+  margin-bottom: 2rem;
+}
+.footer__section .navlist li {
+  padding: 0 1rem 0 0;
+}
+.footer__section .navlist li a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer__section .navlist li a:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #ffffff;
+  animation: underlineAnimation 0.3s ease-in-out;
+}
+.footer__section .nav__search, .footer__section .navlist {
+  display: flex;
+  list-style: none;
+}
+.footer__section .nav__search input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+}
+.footer__section .nav__search input ::-moz-placeholder {
+  font-size: 13px;
+}
+.footer__section .nav__search input:focus, .footer__section .nav__search input ::placeholder {
+  font-size: 13px;
+}
+.footer__section .footer__contact {
+  display: block !important;
+  font-size: 1.5rem;
+}
+
+.bg__blur {
+  background: drop-shadow(10px 10px 10px);
+  filter: 0;
+}
+
+.section__signin {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section__signin .signin {
+  position: absolute;
+  width: 500px;
+  background: #222;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  bottom: -220px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgb(0, 0, 0);
+}
+.section__signin .signin .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.section__signin .signin .content h2 {
+  font-size: 3rem;
+  color: #0f0;
+  text-transform: uppercase;
+}
+.section__signin .signin .content .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section__signin .signin .content .form .inputBox {
+  position: relative;
+  width: 100%;
+}
+.section__signin .signin .content .form .inputBox input {
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.section__signin .signin .content .form .inputBox input:focus ~ i {
+  transform: translateY(-7.5px);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.section__signin .signin .content .form .inputBox input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.section__signin .signin .content .form .inputBox i {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #ffffff;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.section__signin .signin .content .form .inputBox input[type=submit] {
+  padding: 10px;
+  background: #0f0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+.section__signin .signin .content .form .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.section__signin .signin .content .form .links a {
+  color: rgba(255, 255, 255, 0.5019607843);
+  text-decoration: none;
+}
+.section__signin .signin .content .form .links a:nth-child(2) {
+  color: #0f0;
+  font-weight: 600;
+}
+.section__signin .group__login__with {
+  display: flex;
+  gap: 4rem;
+}
+.section__signin .group__login__with .icon__login {
+  background-color: #323232;
+  border-radius: 5px;
+  padding: 0 0 0.5rem 0;
+  width: 250px;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.section__signin .group__login__with .icon__login:hover {
+  filter: drop-shadow(5px 5px 5px #0f0);
+}
+.section__signin .inputBox:hover {
+  filter: drop-shadow(5px 5px 5px #5f5f5f);
+}
+.section__signin input[type=submit]:active {
+  opacity: 0.6;
+}/*# sourceMappingURL=nav_style.css.map */
