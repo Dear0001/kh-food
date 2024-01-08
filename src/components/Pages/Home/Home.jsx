@@ -13,7 +13,7 @@ const Home = () => {
         <SubBanner />
         <TypeOfFood />
       
-      <AboutFood />
+      {/* <AboutFood /> */}
       <BannerStyle />
       <Card />
       <Language />
