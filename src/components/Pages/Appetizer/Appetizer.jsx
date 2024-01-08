@@ -40,7 +40,7 @@ const Appetizer = () => {
   return (
     <section className="section__appetizer">
       <Container className="pt-5 pb-5">
-        <Link to="/khmer-food" className="contron__back">
+        <Link to="/kh-food" className="contron__back">
           <span className="back__home mt-5">Back</span>
         </Link>
         <h1 className="text-center text-black m-4">APPETIZER</h1>
