@@ -27,9 +27,9 @@ const TypeOfFood = () => {
                   onMouseEnter={handleHover}
                   onMouseLeave={handleHoverOut}
                 >
-                  <Link to="/appertizer">
+                  <Link to="/appertizer"> {/* Fix the typo here */}
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6M747t-JjUDtjtmC9dJITu_giJfpzZ3z-Q&usqp=CAU"
+                      src="https://www.196flavors.com/wp-content/uploads/2018/06/phahut-3.jpg"
                       className="img-fluid rounded-circle"
                       alt="image1"
                     />
@@ -46,7 +46,7 @@ const TypeOfFood = () => {
                 >
                   <Link to="/appertizer">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6M747t-JjUDtjtmC9dJITu_giJfpzZ3z-Q&usqp=CAU"
+                      src="https://thefoodgallery.files.wordpress.com/2017/04/20170424_soup.jpg"
                       className="img-fluid rounded-circle"
                       alt="image1"
                     />
@@ -63,7 +63,7 @@ const TypeOfFood = () => {
                 >
                   <Link to="/appertizer">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6M747t-JjUDtjtmC9dJITu_giJfpzZ3z-Q&usqp=CAU"
+                      src="https://d13jio720g7qcs.cloudfront.net/images/guides/origin/639a8bbe29d86.jpg"
                       className="img-fluid rounded-circle"
                       alt="image1"
                     />
@@ -80,7 +80,7 @@ const TypeOfFood = () => {
                 >
                   <Link to="/appertizer">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6M747t-JjUDtjtmC9dJITu_giJfpzZ3z-Q&usqp=CAU"
+                      src="https://nextfoodstop.files.wordpress.com/2015/06/20150615_120829.jpg"
                       className="img-fluid rounded-circle"
                       alt="image1"
                     />

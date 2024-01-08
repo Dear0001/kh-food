@@ -16,7 +16,7 @@ const SubBanner = () => {
               <div className="carousel-inner">
                 <div className="carousel-item mobile active">
                   <img
-                    src="https://source.unsplash.com/random"
+                    src="https://nextfoodstop.files.wordpress.com/2015/06/20150615_120829.jpg"
                     className="d-block"
                     alt="banner image1"
                   />
@@ -30,7 +30,7 @@ const SubBanner = () => {
                 </div>
                 <div className="carousel-item mobile">
                   <img
-                    src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="https://pppenglish.sgp1.digitaloceanspaces.com/image/main/field/image/khmer-desserts.jpg"
                     className="d-block"
                     alt="banner image3"
                   />

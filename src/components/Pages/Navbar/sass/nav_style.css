@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background-color: #FAFAFA;
   color: #333;
@@ -1010,4 +1011,132 @@
 }
 .section__signin input[type=submit]:active {
   opacity: 0.6;
+}
+
+.pop__detail {
+  /* Style the checkbox itself */
+  /* Style the checkbox when checked */
+  /* Style the checkmark inside the checkbox */
+}
+@media only screen and (max-width: 767px) {
+  .pop__detail iframe {
+    height: 300px !important;
+  }
+  .pop__detail label {
+    font-size: 25px !important;
+  }
+  .pop__detail .text-center {
+    font-weight: 700;
+    font-size: 4rem !important;
+  }
+}
+.pop__detail .title__detail h2 {
+  color: #333;
+}
+.pop__detail .detail__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.pop__detail .text__detail h2 {
+  color: #333;
+}
+.pop__detail .ingredients {
+  list-style: none;
+  padding: 0;
+}
+.pop__detail .ingredients label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 30px !important;
+}
+.pop__detail .ingredients input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pop__detail .ingredients input[type=checkbox]:checked {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.pop__detail .ingredients input[type=checkbox]:checked::before {
+  content: "✓";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.pop__detail .ingredients input {
+  margin-right: 10px;
+}
+.pop__detail iframe {
+  margin: 2rem auto;
+  width: 100%;
+  height: 500px;
+}
+
+.loading_pages {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+.loading_pages .loading-bar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background: transparent;
+  border: px solid #3c3c3c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 111px;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #1c1c1c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.loading_pages .loading-bar:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 115px;
+  height: 115px;
+  border: 3px solid transparent;
+  border-top: 5px solid #1c1c1c;
+  border-right: 5px solid #1c1c1c;
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+  animation: animate 2s linear infinite;
 }/*# sourceMappingURL=nav_style.css.map */

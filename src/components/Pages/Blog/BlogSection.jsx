@@ -22,15 +22,14 @@ const BlogSection = () => {
   return (
     <section className="section__blog p-5">
       <Container className="pt-5">
-        <h1 className="phone__res text-center">Blog Post</h1>
+        {/* <h1 className="phone__res text-center">Blog Post</h1> */}
         <div className="row mb-5">
           <div className="col-lg-7 col-md-7 col-sm-12">
-            <div className="blog__image">
-              <img
-                src="https://source.unsplash.com/random/1000x3000"
-                className="img-fluid"
-                alt="image__blog"
-              />
+            <div className="blog__image pt-5">
+            <h2 className="text-center pb-5" style={{fontSize: "35px"}}>Lorem ipsum dolor</h2>
+              <p className="m-4" style={{fontSize: "20px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odio 
+                natus perferendis laborum magni ipsam at eius, voluptatem laudantium in. Lorem ipsum dolor, sit amet
+                 consectetur adipisicing elit. Esse, ipsam?</p>
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-12">
