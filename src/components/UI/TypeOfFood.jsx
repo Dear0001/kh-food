@@ -48,7 +48,7 @@ const TypeOfFood = () => {
                     <img
                       src="https://thefoodgallery.files.wordpress.com/2017/04/20170424_soup.jpg"
                       className="img-fluid rounded-circle"
-                      alt="image1"
+                      alt="image2"
                     />
                     <span className="hover__text">Non Bang</span>
                   </Link>
@@ -65,7 +65,7 @@ const TypeOfFood = () => {
                     <img
                       src="https://d13jio720g7qcs.cloudfront.net/images/guides/origin/639a8bbe29d86.jpg"
                       className="img-fluid rounded-circle"
-                      alt="image1"
+                      alt="image3"
                     />
                     <span className="hover__text">Non Bang</span>
                   </Link>
@@ -82,13 +82,12 @@ const TypeOfFood = () => {
                     <img
                       src="https://nextfoodstop.files.wordpress.com/2015/06/20150615_120829.jpg"
                       className="img-fluid rounded-circle"
-                      alt="image1"
+                      alt="image4"
                     />
                     <span className="hover__text">Non Bang</span>
                   </Link>
                 </div>
               </Col>
-              {/* ... (Repeat for other columns) */}
             </Row>
           </div>
         </div>

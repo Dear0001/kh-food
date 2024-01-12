@@ -6,6 +6,8 @@ const Form = ({ onPost }) => {
     title: "",
     selectedOption: "",
     image: null,
+    ingredients: "",
+    how_to_do: "",
     email: "",
     message: "",
   });
@@ -67,6 +69,28 @@ const Form = ({ onPost }) => {
             />
           </div>
           <div className="mb-5">
+            <input
+              type="text"
+              className="form-control"
+              name="ingredients"
+              value={formData.ingredients}
+              onChange={handleChange}
+              placeholder="ingredients"
+              required
+            />
+            </div>
+          <div className="mb-5">
+            <input
+              type="text"
+              className="form-control"
+              name="how to do"
+              value={formData.how_to_do}
+              onChange={handleChange}
+              placeholder="how_to_do"
+              required
+            />
+          </div>
+          <div className="mb-5">
             <select
               className="form-select"
               name="selectedOption"
@@ -75,10 +99,10 @@ const Form = ({ onPost }) => {
               required
             >
               <option value='active'>Choose type of option</option>
-              <option value={1}>Samlar</option>
+              <option value={1}>Appetizer</option>
               <option value={2}>Suop</option>
               <option value={3}>Fried</option>
-              <option value={4}>Sweet</option>
+              <option value={4}>Dessert</option>
             </select>
           </div>
           <div className="mb-5">

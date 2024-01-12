@@ -633,16 +633,6 @@
     transform: translateX(-100%);
   }
 }
-.section__appetizer .text__center__image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-  font-size: 3.5rem;
-  padding: 10px;
-}
 .section__appetizer .contron__back {
   position: relative;
 }
@@ -658,15 +648,17 @@
 .section__appetizer .contron__back .back__home:hover {
   background-color: darkgreen;
 }
-.section__appetizer .hover__img {
-  position: relative;
-  overflow: hidden;
+.section__appetizer .card-img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.section__appetizer .hover__img img {
-  transition: transform 0.5s ease;
+.section__appetizer .card-body {
+  padding: 1.25rem;
 }
-.section__appetizer .hover__img:hover img {
-  transform: scale(1.1);
+.section__appetizer .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .section__blog .blog__image img {

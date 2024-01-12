@@ -703,17 +703,17 @@ $background-color_3: #333;
 }
 
 .section__appetizer{
-    .text__center__image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        text-align: center;
-        //   background-color: rgba(0, 0, 0, 0.7);
-        font-size: 3.5rem;
-        padding: 10px; 
-    }
+    // .text__center__image {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     color: #fff;
+    //     text-align: center;
+    //     //   background-color: rgba(0, 0, 0, 0.7);
+    //     font-size: 3.5rem;
+    //     padding: 10px; 
+    // }
     .contron__back{
       position: relative;
       .back__home{
@@ -729,16 +729,30 @@ $background-color_3: #333;
         }
       }
     }
-    .hover__img {
-      position: relative;
-      overflow: hidden;
-      img {
-          transition: transform 0.5s ease;
-        }
-        &:hover img {
-          transform: scale(1.1);
-        }
-    }
+    // .hover__img {
+    //   position: relative;
+    //   overflow: hidden;
+    //   img {
+    //       transition: transform 0.5s ease;
+    //     }
+    //     &:hover img {
+    //       transform: scale(1.1);
+    //     }
+    // }
+    .card-img {
+        height: 200px; // Adjust the height as needed
+        object-fit: cover;
+      }
+      
+      .card-body {
+        padding: 1.25rem;
+      }
+      
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      
   }
   .section__blog{
     .blog__image{

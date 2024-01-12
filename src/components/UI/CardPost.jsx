@@ -1,3 +1,4 @@
+//CardPost.jsx
 import React from "react";
 const CardPost = ({ formData }) => {
   return (
@@ -20,6 +21,18 @@ const CardPost = ({ formData }) => {
                   <p className="card-text" style={{ fontSize: "1.5rem" }}>
                     {formData.message}
                   </p>
+                  <div>
+                    <h3>Ingredients</h3>
+                    <ul>
+                      <li>
+                        {formData.ingredients}
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>Hoe to do</h3>
+                    {formData.how_to_do}
+                  </div>
                   <span
                     className="name__poster"
                     style={{ fontSize: "1.6rem", fontWeight: "700" }}
