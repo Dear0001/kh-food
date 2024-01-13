@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/components/Pages/BlogSection.jsx
 // BlogSection.jsx
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
@@ -5,6 +6,13 @@ import db from "../../Firebase/firebase"; // Adjust the path based on your proje
 import CardPost from "../UI/CardPost";
 import Form from "../UI/Form";
 
+=======
+//blog.jsx
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";  
+import CardPost from "../../UI/CardPost";
+import Form from "../../UI/Form";
+>>>>>>> origin/main:src/components/Pages/Blog/BlogSection.jsx
 
 const BlogSection = () => {
   const [postData, setPostData] = useState([]);
