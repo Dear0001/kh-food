@@ -75,35 +75,18 @@ const Form = ({ onPost }) => {
               value={formData.ingredients}
               onChange={handleChange}
               placeholder="ingredients"
-<<<<<<< HEAD
             />
             </div>
             <div className="mb-5">
-              <input
-                type="text"
-                className="form-control"
-                name="how_to_do"  // Change this to "howToDo" or any other valid name
-                value={formData.how_to_do}
-                onChange={handleChange}
-                placeholder="how_to_do"
-              />
-            </div>
-=======
-              required
-            />
-            </div>
-          <div className="mb-5">
             <input
               type="text"
               className="form-control"
-              name="how to do"
+              name="how_to_do"  // Change this to "howToDo" or any other valid name
               value={formData.how_to_do}
               onChange={handleChange}
               placeholder="how_to_do"
-              required
             />
           </div>
->>>>>>> origin/main
           <div className="mb-5">
             <select
               className="form-select"

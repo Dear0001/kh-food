@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // CardPost.jsx
-=======
-//CardPost.jsx
->>>>>>> origin/main
 import React from "react";
 
 const CardPost = ({ formData }) => {
