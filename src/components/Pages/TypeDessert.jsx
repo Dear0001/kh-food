@@ -1,10 +1,10 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Modal, Button, Card } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { onSnapshot, collection } from "firebase/firestore";
 import db from "../../Firebase/firebase";
 
-const AboutFood = () => {
+const Appetizer = () => {
   const [dessert, setDessert] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [show, setShow] = useState(false);
@@ -31,7 +31,10 @@ const AboutFood = () => {
   return (
     <section className="section__appetizer">
       <Container className="pt-5 pb-5">
-        <h1 className="text-center text-black m-4">random food</h1>
+        <Link to="/kh-food" className="contron__back">
+          <span className="back__home mt-5">Back</span>
+        </Link>
+        <h1 className="text-center text-black m-4">DESSERT</h1>
         <Row xs={1} sm={2} md={3} lg={6}>
           {dessert.map((item, index) => (
             <Col key={index} className="mb-4" onClick={() => handleShow(item)}>
@@ -89,4 +92,4 @@ const AboutFood = () => {
   );
 };
 
-export default AboutFood;
+export default Appetizer;

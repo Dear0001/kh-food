@@ -1,20 +1,20 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Modal, Button, Card } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { onSnapshot, collection } from "firebase/firestore";
 import db from "../../Firebase/firebase";
 
-const AboutFood = () => {
-  const [dessert, setDessert] = useState([]);
+const Appetizer = () => {
+  const [appetizer, setAppetizer] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
-      const dessertCollection = collection(db, "dessert");
+      const appetizerCollection = collection(db, "appetizer");
 
-      const unsubscribe = onSnapshot(dessertCollection, (snapshot) => {
-        setDessert(snapshot.docs.map((doc) => doc.data()));
+      const unsubscribe = onSnapshot(appetizerCollection, (snapshot) => {
+        setAppetizer(snapshot.docs.map((doc) => doc.data()));
       });
       return () => unsubscribe();
     };
@@ -31,9 +31,12 @@ const AboutFood = () => {
   return (
     <section className="section__appetizer">
       <Container className="pt-5 pb-5">
-        <h1 className="text-center text-black m-4">random food</h1>
+        <Link to="/kh-food" className="contron__back">
+          <span className="back__home mt-5">Back</span>
+        </Link>
+        <h1 className="text-center text-black m-4">APPETIZER</h1>
         <Row xs={1} sm={2} md={3} lg={6}>
-          {dessert.map((item, index) => (
+          {appetizer.map((item, index) => (
             <Col key={index} className="mb-4" onClick={() => handleShow(item)}>
               <Card>
                 <Card.Img
@@ -89,4 +92,4 @@ const AboutFood = () => {
   );
 };
 
-export default AboutFood;
+export default Appetizer;

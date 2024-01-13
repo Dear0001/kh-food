@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Banner from "../../../assets/image/banner.png";
+import Banner from "../../assets/image/banner.png";
 
 const Contact = () => {
   return (
